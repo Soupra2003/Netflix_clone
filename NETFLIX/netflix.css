@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Images/background.jpeg");
+    background-position: center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 665px;
+    position: relative;
+    zoom: 1.05;
+}
+
+.main .box {
+    height: 665px;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background: linear-gradient(180deg, black, transparent);
+}
+
+nav img {
+    color: red;
+    width: 140px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 16px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.hero> :nth-child(3) {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.btn {
+    padding: 8px 15px;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: #e50914;
+    color: white;
+    padding: 14px 27px;
+    font-size: 25px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-red-sm {
+    background-color: #e50914;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#selectoption {
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    padding: 0px 10px;
+    border: none;
+    height: 35px;
+
+}
+
+option {
+    color: black;
+
+}
+
+
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero-buttons input {
+    width: 400px;
+    padding: 15px;
+    background: #0f0f0fe2;
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 5px;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: auto;
+    height: 15vh;
+  }
+  .curve-line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; 
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    z-index: 2; 
+    color: white;
+    
+  }
+  .shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    z-index: 1; 
+    overflow: hidden;
+    border-radius: 20px; 
+   
+  }
+.trend{
+    box-sizing: border-box;
+}
+  .curve-line h2{
+    margin-top: 50px;
+   margin-right: 120px;
+    margin-left: 120px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+  }
+  .netflix-content{
+    height: 110vh;
+    width: auto;
+    background-color: black;
+    color: white;
+  }
+.select-option{
+    height: 30px;
+    width: 100;
+}
+  #country-select{
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    height: 45px;
+    margin-left: 120px;
+    border: 1px solid rgb(74, 74, 74);
+    margin-top: 1px;
+    border-radius: 4px;
+  }
+  #show-select{
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    height: 45px;
+    margin-left: 10px;
+    border: 1px solid rgb(74, 74, 74);
+    margin-top: 1px;
+    border-radius: 4px;
+  }
+
+  .card-content{
+    margin-top: 30px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+
+  }
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 190px;
+    height: 270px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 60px;
+    transition: transform 1s ease, filter 1s ease;
+    margin-top: 20px;
+  }
+  .card :hover{
+    transform: scale(1.05) ;
+    
+  }
+  .card img{
+    width: 190px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 1s ease, filter 1s ease;
+  }
+.number{
+    font-family: sans-serif;
+    position: absolute;
+    left: -40px;
+    top: 108px;
+    color: #000000;
+    -webkit-text-stroke: 2px white;
+    font-size: 6.5rem;
+    padding: 10px 20px;
+    border-radius: 50%;
+    z-index: 1;
+    font-weight: 800;
+    transition: transform 1s ease, filter 1s ease;
+    cursor: pointer;
+}
+.card:hover 
+ {
+    transform: scale(1.05);
+}
+
+.join{
+  height: 50vh;
+  margin-top: 50px;
+  margin-left:110px ;
+  margin-right: 120px;
+}
+.join h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.joining{
+  margin-top: 20px;
+  display: flex;
+
+}
+.joining-card{
+  height: 40vh;
+  background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);;
+  width: 45vh;
+  border-radius: 1rem;
+  margin-left: 15px;
+}
+.join-content{
+  background-color: transparent;
+  height: 90%;
+  width: 90%;
+ margin-top: 15px;
+ margin-left: 15px;
+}
+.join-content2{
+  background-color: transparent;
+  height: 90%;
+  width: 90%;
+ margin-top: 15px;
+ margin-left: 15px;
+}
+.join-content h3{
+  font-size: 25px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.join-content p{
+  margin-top: 10px;
+  color: rgb(174, 174, 174);
+  
+}
+.join-content img{
+  margin-top: 60px;
+  margin-left: 210px;
+  width: 70px;
+}
+.join-content2 h3{
+  font-size: 25px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.join-content2 p{
+  margin-top: 10px;
+  color: rgb(174, 174, 174);
+  
+}
+.join-content2 img{
+  margin-top: 30px;
+  margin-left: 210px;
+  width: 70px;
+}
+
+.questions{
+  height: 80vh;
+  margin-top: 30px;
+  margin-left:110px ;
+  margin-right: 120px;
+
+}
+.questions h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.question-content{
+  margin-top: 20px;
+}
+.question-card{
+  height: 10vh;
+  width: 100%;
+  background-color:#2d2d2d;
+  cursor: pointer;
+  margin-top: 8px;
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+.ask{
+  padding: 22px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.ask p{
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ask p1{
+  font-size: 2.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.question-card:hover{
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background-color: rgb(65, 65, 65);
+  
+}
+.Pre-footer{
+  height: 15vh;
+  margin-left:110px ;
+  margin-right: 120px;
+  text-align: center;
+  margin-top: 10px;
+}
+.Pre-footer p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.extra{
+  margin-top: 15px;
+}
+.extra input{
+  width: 500px;
+}
+
+footer{
+  height: 60vh;
+  margin-left:110px ;
+  margin-right: 120px;
+  margin-top: 40px;
+  color: #ababab;
+}
+.footer-links{
+  height: 20vh;
+  width: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.first{
+  height: 20vh;
+  width: 90vh;
+}
+.first p{
+  cursor: pointer;
+  margin-top: 10px;
+  color: #ababab;
+}
+.footer-last{
+  margin-top: 50px;
+}
+.last{
+  margin-left: -10px;
+}
+.footer-last p{
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ababab;
+}
